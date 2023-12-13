@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Hogwarts Studio</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="layar-dalam">
+            <div class="logo">
+               <a href=""><img src="Data/hitam putih.png" class="putih"/></a>
+               <a href=""><img src="Data/putih hitam.png" class="hitam"/></a>
+            </div>
+            <div class="menu">
+                <a href="#a" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width: auto;">Login</button></li>
+                </ul>
+            </div>
+        </div>   
+    </nav>
+    <div id='login-form' class='login-page'>
+        <div class="form-box">
+            <div class='button-box'>
+                <div id='btn'>
+                <button type='button' onclick='login()' class='toggle-btn'>Login</button>
+                <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text' class='input-field' placeholder='Email Id' required >
+                    <input type='password' class='input-field' placeholder='Enter Password' required >
+                    <input type='checkbox' class='check-box'>
+                    <span>Remember Password</span>
+                    <button type='submit' class='submit-btn'>Login</button>
+                </form>
+                <form id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name' required >
+                    <input type='text' class='input-field' placeholder='Last Name' required >
+                    <input type='email' class='input-field' placeholder='Email Id' required >
+                    <input type='packages' class='input-field' placeholder='Packages' required >
+                    <input type='checkbox' class='check-box'>
+                    <span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+            </div>
+        </div>
+    </div>
+    <div class="layar-penuh">
+        <header id="home">
+            <div class="overlay"></div>
+            <video autoplay muted loop>
+                <source src="Data/video.mp4" type="video/mp4"/>
+            </video> 
+            <div class="intro">
+                <h3>Visit Us</h3>
+                <p>You can feel like you are a real student at Hogwarts</p>
+                <p></p><a href="#aboutus" class="tombol">MORE INFO</a></p>
+            </div>
+        </header>
+        <main>
+            <section id="aboutus">
+                <div class=".layar-dalam">
+                    <h3>About Us</h3>
+                    <p class="ringkasan">Hogwarts is a magical school found in the Harry Potter films. In the Harry Potter films, Hogwarts was founded in 1000 AD</p>
+                <div class="konten-isi">
+                    <p>Hogwarts Studio is a visiting place that is the same as Hogwarts School. Hogwarts Studio was only founded around 2020 and is located in the city of London, United Kingdom.
+                        When you visit Hogwarts Studio, you can feel something real about being a student at Hogwarts School. At Hogwarts Studio too, there are many places that are very similar to Hogwarts School. Then, during this visit you can get a discount on ticket prices on certain days. Apart from that, when you visit Hogwarts you will get a special small gift.</p>
+                </div>
+                </div>
+            </section>
+            <section class="abuabu" id="support">
+                <div class="layar-dalam support">
+                    <div>
+                        <img src="Data/map.png" />
+                        <h6>Map</h6>
+                        <p>You will get a free map service so you don't get lost and the map can also be a memory for you when visiting Hogwarts Studio</p>
+                    </div>
+                    <div>
+                        <img src="Data/man.png" />
+                        <h6>Tour Guide</h6>
+                        <p>When visiting Hogwarts Studio, you will get an experienced tour guide so you will really enjoy your visit to Hogwarts Studio.</p>
+                    </div>
+                    <div>
+                        <img src="Data/bag.png" />
+                        <h6>Souvenir</h6>
+                        <p>You will get a special little gift related to Harry Potter. Then, Hogwarts Studio also provides a souvenir shop.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="gallery">
+                <div><img src="Data/foto1.jpg"></div>
+                <div><img src="Data/foto2.jpg"></div>
+                <div><img src="Data/foto3.jpg"></div>
+                <div><img src="Data/foto4.jpg"></div>
+                <div><img src="Data/foto5.jpg"></div>
+                <div><img src="Data/foto6.jpg"></div>
+                <div><img src="Data/foto7.jpg"></div>
+                <div><img src="Data/foto8.jpg"></div>
+            </section>
+            <section class="quote">
+                <div class="layar-dalam">
+                    <h4>"But you know, happiness can be found even in the darkest of times, if one only remembers to turn on the light."</h4>
+                </div>
+            </section>           
+            <section class="abuabu" id="packages">
+                <div class="layar-dalam">
+                    <h3>Our Packages</h3>
+                    <p class="ringkasan">There are three types of packages to reserve when you want to visit Hogwarts Studio. Each package has different benefits.</p>
+                    <div class="packages">
+                        <div class="area">
+                            <div class="paket1">
+                                <img src="Data/paket1.png">
+                                <h3>Single Tour</h3>
+                                <p>You will get a private tour guide and special service for your visit to Hogwarts Studio</p> 
+                            </div>
+                        </div>
+                        <div class="area">
+                            <div class="paket2">
+                                <img src="Data/paket2.png">
+                                <h3>Couple Tour</h3>
+                                <p>You will get a private tour guide for your visit with your partner to Hogwarts Studio and you will get a discount because you are a couple</p>
+                            </div>
+                        </div>
+                        <div class="area">
+                            <div class="paket3">
+                                <img src="Data/paket3.png">
+                                <h3>Group Tour</h3>
+                                <p>You will get a tour guide for your group and your expenses will be more economical</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="service">
+                <div>
+                    <img src="Data/bus.png" />
+                    <h6>Transport</h6>
+                    <p>On tours visiting Hogwarts Studio, transportation is provided to move from one place to another because the distance is too far.</p>
+                </div>
+                <div>
+                    <img src="Data/food.png" />
+                    <h6>Food & Drink</h6>
+                    <p>You will get free food and drink when youvisiting Hogwarts Studio, so you don't worry to be hungry.</p>
+                </div>
+                <div>
+                    <img src="Data/clothes.png" />
+                    <h6>Free Costume</h6>
+                    <p>You will get a service to borrow a Harry Potter costume so you will feel like you are a real student at Hogwarts School</p>
+                </div>
+                <div>
+                    <img src="Data/p3k.png" />
+                    <h6>First Aid</h6>
+                    <p>You will get a first aid health service for safety so you don't need to worry when visiting Hogwarts Studio</p>
+                </div>
+            </section>
+            <section id="contact"></section>
+        </main>
+        <footer id="contact">
+            <div class="layar-dalam">
+                <div>
+                    <h5>Info</h5>
+                    <p>Website Hogwarts Studio</p>
+                </div>
+                <div>
+                    <h5>Contact</h5>
+                    <p>(021) 8895 231 03</p>
+                </div>
+                <div>
+                    <h5>Help</h5>
+                    <p>HogwartsStudio.gmail.com</p>
+                </div>
+                <div>
+                    <h5>Social Media</h5>
+                    <p>@HogwartsStudio</p>
+                </div>
+            </div>
+            <div class="layar-dalam">
+                <div class="copyright">&copy; 2023 Hogwarts Studio</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+            crossorigin="anonymous">
+    </script>
+    <script src="javascript.js"></script>
+</body>
+</html>
